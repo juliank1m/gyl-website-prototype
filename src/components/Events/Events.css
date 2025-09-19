@@ -1,0 +1,66 @@
+.events {
+  padding: 100px 5%;
+  text-align: center;
+}
+
+.events h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #000F38;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.event-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.event-card img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+/* Hover zoom */
+.event-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay text */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  padding: 20px;
+  text-align: center;
+  transition: opacity 0.4s ease;
+  border-radius: 12px;
+}
+
+.event-card:hover .overlay {
+  opacity: 1;
+}
+
+/* Make sure overlay text stays white */
+.overlay p {
+  color: #fff !important;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}

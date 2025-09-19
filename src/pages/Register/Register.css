@@ -1,0 +1,126 @@
+.register-page {
+  padding: 120px 5% 80px;
+  background: #fff;
+  min-height: 80vh;
+}
+
+.register-page h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #000F38;
+  text-align: center;
+}
+
+.register-page h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #444;
+}
+
+.register-form {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.register-form fieldset {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.register-form legend {
+  font-weight: bold;
+  color: #1b1363;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.register-form input,
+.register-form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.register-form input[type="checkbox"],
+.register-form input[type="radio"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.waiver-note {
+  font-size: 14px;
+  color: #555;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.register-form button {
+  margin-top: 20px;
+  width: 100%;
+}
+.mandatory-list {
+  list-style: disc inside;
+  padding-left: 15px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mandatory-list li {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.note {
+  font-size: 14px;
+  color: #777;
+  margin-top: 8px;
+}
+.required {
+  color: red;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+.mandatory-list {
+  list-style: disc inside;
+  padding-left: 15px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mandatory-list li {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.note {
+  font-size: 14px;
+  color: #777;
+  margin-top: 8px;
+}
+
+.waiver-note {
+  font-size: 14px;
+  color: #555;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+}
+

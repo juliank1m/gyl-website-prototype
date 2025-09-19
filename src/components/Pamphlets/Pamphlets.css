@@ -1,0 +1,36 @@
+.pamphlets {
+  padding: 100px 5%;
+  text-align: center;
+}
+
+.pamphlets h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #000F38;
+}
+
+.pamphlets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pamphlet-btn {
+  display: inline-block;
+  background: #1b1363;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.pamphlet-btn:hover {
+  background: #fff;
+  color: #1b1363;
+  border: 2px solid #1b1363;
+  transform: scale(1.05);
+}

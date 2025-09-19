@@ -1,0 +1,34 @@
+.register {
+  margin: 100px auto;
+  max-width: 600px;
+}
+
+.register h2 {
+  font-size: 32px;
+  color: #000F38;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.register form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register input,
+.register textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.register textarea {
+  min-height: 120px;
+}
+
+.register button {
+  align-self: flex-start;
+}

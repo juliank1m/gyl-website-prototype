@@ -1,0 +1,104 @@
+:root{ --nav-height: 72px; }
+
+nav{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--nav-height);
+  background: #ffffff;           /* solid background always */
+  z-index: 1000;
+  display: block;
+  box-shadow: 0 2px 12px rgba(0,0,0,.06);
+}
+
+.nav-inner{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{ width: 160px; }
+
+/* Menu */
+nav ul{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav ul li{
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  transition: color .3s ease;
+}
+
+/* Only apply underline effect to normal links, not buttons */
+nav ul li:not(:has(.btn)):not(:has(.btn-outline))::after {
+  content:'';
+  position:absolute;
+  left:0; bottom:-6px; height:2px; width:0;
+  background:#212EA0;
+  transition: width .3s ease;
+}
+
+nav ul li:not(:has(.btn)):not(:has(.btn-outline)):hover::after {
+  width:100%;
+}
+
+
+
+nav ul li:hover{ color:#212EA0; }
+
+/* Buttons */
+.btn {
+  background: #1b1363;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  border: 2px solid #1b1363;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: #fff;
+  color: #1b1363;
+  transform: scale(1.05);
+}
+/* Outlined button style */
+.btn-outline {
+  background: transparent;
+  color: #1b1363;
+  border: 2px solid #1b1363;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #1b1363;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.btn:hover{ transform:scale(1.05); opacity:.9; }
+
+.logobtn{ background:transparent; border:0; cursor:pointer; }
+
+/* Mobile menu */
+.menu-toggle{ display:none; background:none; border:none; font-size:24px; cursor:pointer; }
+@media (max-width: 768px){
+  nav ul{
+    display:none;
+    position:absolute; right:5%; top:calc(var(--nav-height) - 6px);
+    background:#fff; flex-direction:column; gap:16px; padding:16px 18px;
+    border-radius:12px; box-shadow:0 8px 24px rgba(0,0,0,.12);
+  }
+  nav ul.active{ display:flex; }
+  .menu-toggle{ display:block; }
+}

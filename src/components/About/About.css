@@ -1,0 +1,37 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 80px 5%;
+  flex-wrap: wrap;
+}
+
+.about-left,
+.about-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.about h3 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #212EA0;
+  margin-bottom: 10px;
+}
+
+.about h2 {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 10px 0 20px;
+}
+
+.about p {
+  margin-bottom: 15px;
+}
